@@ -14,7 +14,6 @@ window.addEventListener("load", function () {
     if (!list || list.length == 0) return;
 
     const first = list[0];
-    console.dir(list[0]);
     let firstWidth = first.clientWidth;
 
     const firstStyles = window.getComputedStyle(first);
@@ -34,13 +33,6 @@ window.addEventListener("load", function () {
       }
 
       first.style.marginLeft = `-${ml}px`;
-
-      console.log(
-        first.style.marginLeft,
-        ml,
-        gallery.scrollWidth,
-        list[0].scrollWidth
-      );
     };
 
     const btnPrev = slider.querySelector(selectorPrev);
